@@ -24,13 +24,14 @@
             ],
             "styles": [
               "src/styles.css",
-              "../Angular/node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "../Angular/node_modules/bootstrap/dist/css/bootstrap.min.css",
               "../Angular/node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": [
               "../Angular/node_modules/jquery/dist/jquery.min.js",
+              "../Angular/node_modules/popper.js/dist/umd/popper.min.js",
               "../Angular/node_modules/bootstrap/dist/js/bootstrap.min.js"
-              "../Angular/node_modules/popper.js/dist/popper.min.js"
+              
             ],
             "es5BrowserSupport": true
           },
