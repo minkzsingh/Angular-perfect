@@ -14,7 +14,7 @@ import { SidebarComponent } from './Component/sidebar/sidebar.component';
 import { PostsComponent } from './Component/posts/posts.component';
 import { PostComponent } from './Component/post/post.component';
 import { ServiceComponent } from './Component/service/service.component';
-import { DirectiveDirective } from './directive.directive';
+import { HighLighterDirective } from './directive/high-lighter.directive';
 
 let routes: Routes = [
   {
@@ -49,7 +49,7 @@ let routes: Routes = [
     PostsComponent,
     PostComponent,
     ServiceComponent,
-    DirectiveDirective,
+    HighLighterDirective,
   ],
   imports: [
     BrowserModule,
