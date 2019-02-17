@@ -15,6 +15,7 @@ import { PostsComponent } from './Component/posts/posts.component';
 import { PostComponent } from './Component/post/post.component';
 import { ServiceComponent } from './Component/service/service.component';
 import { HighLighterDirective } from './directive/high-lighter.directive';
+import { MyNgIfDirective } from './my-ng-if.directive';
 
 let routes: Routes = [
   {
@@ -50,6 +51,7 @@ let routes: Routes = [
     PostComponent,
     ServiceComponent,
     HighLighterDirective,
+    MyNgIfDirective,
   ],
   imports: [
     BrowserModule,
