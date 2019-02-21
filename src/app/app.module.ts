@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { RouterModule, Routes} from '@angular/router';
 import { FetchDataService } from './service/fetch-data.service'; 
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -57,7 +58,8 @@ let routes: Routes = [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    HttpClientModule
   ],
   providers: [FetchDataService],
   bootstrap: [AppComponent]
