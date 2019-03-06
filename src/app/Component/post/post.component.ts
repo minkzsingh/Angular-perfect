@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class PostComponent implements OnInit {
 
   id: number = 0;
-  post = {};
+  post:any;
   constructor(private route: ActivatedRoute) {
       this.route.params.subscribe(res => this.id = res.id)
       fetch("https://jsonplaceholder.typicode.com/posts/"+this.id)

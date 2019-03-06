@@ -1,0 +1,8 @@
+{
+  "universal": {
+    "project": "Angular",
+    "skipInstall": false,
+    "directory": ".",
+    "http": true
+  }
+}

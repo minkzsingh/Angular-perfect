@@ -1,3 +1,6 @@
+import { NgtUniversalModule } from '@ng-toolkit/universal';
+import { CommonModule } from '@angular/common';
+import { TransferHttpCacheModule } from '@nguniversal/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -54,14 +57,18 @@ let routes: Routes = [
     HighLighterDirective,
     MyNgIfDirective,
   ],
-  imports: [
+  imports:[
+    CommonModule,
+    NgtUniversalModule,
+    TransferHttpCacheModule,
+    HttpClientModule,
     BrowserModule,
+    
     AppRoutingModule,
     FormsModule,
     RouterModule.forRoot(routes),
     HttpClientModule
   ],
   providers: [FetchDataService],
-  bootstrap: [AppComponent]
 })
 export class AppModule { }
